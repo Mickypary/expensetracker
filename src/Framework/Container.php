@@ -71,7 +71,7 @@ class Container
 
     // Factory functions inside the container-definition file
     $factory = $this->definitions[$id];
-    $dependency = $factory();
+    $dependency = $factory($this);
     // var_dump($id);
     // var_dump($dependency);
 
